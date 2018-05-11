@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+    <title>pig dice</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Pig Dice</h1>
+        <div class="well">
+            <h2>Rules</h2>
+            <ul class="rules">
+                <li>If the player roles a 1, they score nothing and it becomes the next player's turn.</li>
+                <li>If the player roles any other number, it is added to their turn total and the player's turn conitues.</li>
+                <li>If the player chooses to "hold", their turn total is added to their score and it becomes the next player's turn.</li>
+            </ul>
+        </div>
+        <div class="row">
+            <h2>Let's Play</h2>
+            <div class="col-md-6">
+                <button type="button" class="btn btn-daneger" id="play">Play</button>
+                <ul id="choose">
+                    <li>Easy</li>
+                    <li>Hard</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <div class="jumbotron">
+                    <form id="error">
+                        <div class="form-group">
+                            <input type="text" placeholder="score">
+                            <label for="next" id="player"></label>
+                        </div>
+                        <button class="btn">Add</button>
+                    </form>
+                    <form id="comp">
+                        <div class="form-group">
+                            <input type="text" placeholder="score">
+                            <label for="next" id="player"></label>
+                        </div>
+                        <button class="btn">Add</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
