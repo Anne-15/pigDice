@@ -11,7 +11,9 @@
 
 <body>
     <div class="container">
-        <h1>Pig Dice</h1>
+        <div id="jump">
+            <h1>Pig Dice</h1>
+        </div>
         <div class="well">
             <h2>Rules</h2>
             <ul class="rules">
@@ -24,27 +26,33 @@
             <h2>Let's Play</h2>
             <div class="col-md-6">
                 <button type="button" class="btn btn-daneger" id="play">Play</button>
-                <ul id="choose">
-                    <li>Easy</li>
-                    <li>Hard</li>
-                </ul>
             </div>
             <div class="col-md-6">
                 <div class="jumbotron">
                     <form id="error">
-                        <div class="form-group">
-                            <input type="text" placeholder="score">
-                            <label for="next" id="player"></label>
-                        </div>
+                        <h3>Player 1</h3>
+                        <label for="next" id="player1"></label>
+                        <span id="p1">
+                                <ul>
+
+                                </ul>
+                            </span>
                         <button class="btn">Add</button>
                     </form>
                     <form id="comp">
+                        <h3>Player 2</h3>
                         <div class="form-group">
-                            <input type="text" placeholder="score">
-                            <label for="next" id="player"></label>
+                            <label for="next" id="player2"></label>
+                            <span id="p2">
+                            <ul>
+                                
+                            </ul>
+                            </span>
                         </div>
                         <button class="btn">Add</button>
                     </form>
+                    <button type="submit" class="btn btn-danger" id="show">Play</button>
+                    <button type="submit" class="btn btn-success" id="pass">Pass</button>
                 </div>
             </div>
         </div>
