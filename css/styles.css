@@ -21,9 +21,25 @@ body {
 }
 
 .jumbotron {
-    opacity: 0.6;
+    opacity: 0.8;
 }
 
 .well {
-    opacity: 0.6;
+    opacity: 0.8;
+}
+
+h1 {
+    color: brown;
+}
+
+h2 {
+    color: brown;
+}
+
+.button {
+    text-align: center;
+}
+
+.jumbotron {
+    width: 500px;
 }

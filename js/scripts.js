@@ -24,9 +24,6 @@ function enter() {
         //user interface logic
     $(document).ready(function() {
         $("#play").condition(function() {
-            if (player1 == 0) {
-                return null;
-            }
-
+            var dice = $(this).condition(numbers).val();
         });
     });
