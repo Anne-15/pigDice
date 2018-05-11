@@ -19,11 +19,7 @@ function enter() {
         this.player2 = player2;
     }
     Players.prototype.players = function() {
-            this.player1 + this.player2
-        }
-        //user interface logic
-    $(document).ready(function() {
-        $("#play").condition(function() {
-            var dice = $(this).condition(numbers).val();
-        });
-    });
+        this.player1 + this.player2
+    }
+}
+//user interface logic

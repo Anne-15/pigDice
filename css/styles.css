@@ -26,6 +26,8 @@ body {
 
 .well {
     opacity: 0.8;
+    border-radius: 55px;
+    margin-bottom: 40px;
 }
 
 h1 {
