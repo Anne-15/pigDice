@@ -13,15 +13,19 @@ var player = function(currentScore) {
 };
 
 
-var Game = function(result1, result2, play1, play2, ) {
-    var result1 = 0;
-    var result2 = 0
-    var play1 = 0;
-    var play2 = 0;
+var Game = function(result1, result2, play1, play2, result1, result2) {
+    this.result1 = result1;
+    this.result2 = result2;
+    this.play1 = play1;
+    this.play2 = play2;
+    this.result1 = result1;
+    this.result2 = result2;
 }
 $("#p1").text();
 $("#p2").text();
-$("#dice").show();
+$("#dice").text();
+$("#result1").text();
+$("#result2").text();
 
 
 //user interface logic
@@ -42,7 +46,7 @@ $("button#roll").click(function() {
                     dice = 0;
                     $("#player1").hide();
                     $("#player2").show();
-                } else if ((p1 + total1) >= 100) {
+                } else if ((p1 + total1) = 100) {
                     total1 += result1;
                     $("#p1").text(total1);
                     alert("Player 1 Win!");
