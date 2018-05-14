@@ -13,6 +13,7 @@ elseif(index > 2) {
     return counter;
 }
 
+
 //constructures
 var Player = function(player1, player2) {
     this.player1 = player1;
@@ -28,6 +29,6 @@ Player.prototype.counter = function() {
 //play button 
 $(document).click(function() {
     $("button#play").click(function() {
-
+        if (index === 0)
     });
 });
