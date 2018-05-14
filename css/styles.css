@@ -45,3 +45,7 @@ h2 {
 .jumbotron {
     width: 500px;
 }
+
+.button {
+    text-align: center;
+}
