@@ -94,16 +94,14 @@ $("button#pass").click(function() {
 });
 
 $("button#restart").click(function() {
-total1 = 0;
-total2 = 0;
-index = 0;
-result1 = 0;
-result2 = 0;
-$("#player2").hide();
-$("#player1").show();
-$("#score").text(0)
-$("#result1").text(0);
-$("#result2").text(0);
-})
-
+    total1 = 0;
+    total2 = 0;
+    index = 0;
+    result1 = 0;
+    result2 = 0;
+    $("#player2").hide();
+    $("#player1").show();
+    $("#score").text(0)
+    $("#result1").text(0);
+    $("#result2").text(0);
 });
